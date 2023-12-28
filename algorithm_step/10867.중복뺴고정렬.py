@@ -17,7 +17,7 @@ input = sys.stdin.readline
 N = int(input())
 
 
-firstlist = list(map(int ,input().split()))
+firstlist = list(map(str, input().split()))
 
 #1. 중복제거
 
@@ -30,11 +30,12 @@ twolist = list(set(firstlist))
 
 # reverse = True : 내림차순으로 하고싶을때
 
-lastlist = sorted(twolist , reverse=True)
+lastlist = sorted(twolist )
+
+
+for i in lastlist:
+  print(i,end=' ')
 
 
 
-print("firstlist", firstlist)
-print("twolist", twolist)
 
-print("lastlist", lastlist)
