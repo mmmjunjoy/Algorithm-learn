@@ -3,7 +3,9 @@
 # 효율성 0 %
 
 
-def solution(scoville, K):
+# remove 사용 
+
+def solution1(scoville, K):
 
  
     # 모든 원소가 k 보다 작은지 체크하기
@@ -27,4 +29,29 @@ def solution(scoville, K):
     print(scoville)
     print("count",count)
 
+    return count
+
+
+
+# pop 사용
+
+
+def solution2(scoville, K):
+
+    scoville.sort()
+    count = 0
+    print(scoville)
+    for i in scoville:
+         
+        if i < K:
+            print("섞자")
+            a = scoville.pop(0)
+            b = scoville.pop(0)
+            c = a + (b*2)
+            scoville.append(c)
+            scoville.sort()
+            count+=1
+            
+    
+    print(count)
     return count
