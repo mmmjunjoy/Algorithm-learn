@@ -6,12 +6,12 @@ a = int(input())
 b = int(input())
 c = int(input())
 
+
 multi = str(a*b*c)
-
-print(multi)
-
 # count 이용
 
+
+# print(multi)
 # for i in range(10):
 #     print(multi.count(str(i)))
 
@@ -30,4 +30,4 @@ for i in dicts:
     print(dicts.get(i))
   
 
-print(dicts)
+# print(dicts)
